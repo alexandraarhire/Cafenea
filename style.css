@@ -1,0 +1,247 @@
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0px 0px;
+}
+body{
+  font-family: 'Glory', sans-serif;
+  font-weight: 300;
+}
+
+/* dif dintre clasa si id: clasa nu e unica id ul e unic */
+/* nav part */
+nav{
+  background-color: rgb(92, 80, 51);
+  overflow: hidden;
+  display:flex;
+  justify-content: space-between;
+  padding-left:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  height:60px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1111;
+}
+.sticky + main {
+  padding-top: 60px;
+}
+
+nav img{
+  cursor: pointer;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li{
+  float:left;
+  padding-right:20px;
+}
+nav a{
+     float:right;
+        color: #ffffff;
+        text-align: center;
+        padding: 9px 14px;
+        text-decoration: none;
+        font-size: 17px;
+        list-style-type: none;
+}
+
+
+#hero{
+  background-image:url("./images/1737168.jpg");
+  background-size:cover;
+  position:relative;
+  height:89.5vh;
+
+}
+/* se refera la toate h1 din banner */
+.banner h1{
+  top:45%;
+  left:50%;
+  color:#ede8e8;
+  position:absolute;
+  transform: translate(-50%,-35%);  
+  font-family: 'Glory', sans-serif;
+  font-weight: 700;
+}
+/* asta se refera la clasa de butoane din id ul hero */
+#hero .btn{
+  background-image: url("./images/ggy0wnqewp881.webp");
+  background-size:cover;
+  position:absolute;
+  top:85%;
+  left:50%;
+  margin:0px 0px 30px 0px;
+  height:45px;
+  border:0px;
+  border-radius: 5px;
+  text-align:center;
+  transform: translate(-50%,-50%);  
+}
+.btn a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+    padding:9px 10px;
+
+}
+
+/* cards section */
+
+.card-wrap{
+  position:relative;
+margin-top:130px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.card img{width:100%;}
+.card-b{
+margin-top:3px;
+text-align: center;
+margin-bottom: 5px;
+line-height: 1.1;
+}
+.card{
+  -webkit-box-shadow: 1px -1px 10px -2px #000000; 
+  box-shadow: 1px -1px 10px -2px #000000;
+  width:262px;
+}
+
+.btn{
+  background-color: #5c5033!important;
+  color:rgb(255, 255, 255)!important;
+  width:200px;
+  height:40px;
+  border:none!important;
+}
+
+
+/* carousel section */
+.artwork h4{
+  text-align: center;
+  padding:20px;
+
+}
+
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  position:relative;
+  margin:0 auto;
+  /* top:500%;
+  left:50%;
+  transform: translate(-50%,-500%);   */
+  margin-bottom:140px;
+  text-align:center;
+}
+
+
+/* Hide the images by default */
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: hwb(39 38% 31%);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev{
+  left:25%;
+}
+/* Position the "next button" to the right */
+.next {
+  right:25%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(248, 214, 101, 0.8);
+}
+
+/* CONTACT SECTION */
+
+main h4{
+  font-family: 'Glory', sans-serif;
+  font-weight: 700;
+  margin:1rem;
+  text-align: center;
+}
+
+.form1 h4{
+ padding-top:20px;
+}
+.form1{
+  font-family: 'Glory', sans-serif;
+  width:40%;
+  color:#ffffff;
+  margin:0 auto;
+  text-align: center;
+  background-color: rgb(92, 80, 51);
+  padding-bottom:20px;
+  margin-bottom: 130px;
+  border-radius: 5px;
+}
+
+input{
+  border-radius: 5px;
+  border:0;
+  padding:8px;
+  line-height: 1.2;
+  width:250px;
+  height:35px;
+}
+textarea{
+  width:300px;
+  border-radius: 5px;
+  padding:10px;
+}
+
+#submit{
+  width:80px;
+  height:40px;
+background-color: #e49d34;
+}
+#submit:hover{
+  background-color: #e7b15f;
+  transition: all 1s;
+}
+
+footer{
+  padding:20px;
+  font-family: 'Glory', 'sans-serif';
+  text-align: center;
+  margin:0;
+  padding:0;
+  background-color: black;
+  color:#ffffff;
+}
+footer h5{
+  padding-top:20px;
+  font-weight: 700;
+}
+footer p{
+  color:#766439;
+  margin:0;
+  padding-bottom:20px;
+}
+.favicons{
+  margin-right:20px;
+  cursor:pointer;
+}
+
